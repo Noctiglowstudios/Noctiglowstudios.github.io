@@ -1,0 +1,102 @@
+body, html 
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background: #000 url('assets/Logos/NoctiglowStudios-export.png') no-repeat center center fixed;
+  background-size: 1800px 1080px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  position: relative;
+}
+
+canvas#bgCanvas 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+  pointer-events: none;
+}
+
+header, section, footer 
+{
+  position: relative;
+  z-index: 2; 
+}
+
+/* NAV + HERO + OTHER STYLES */
+header 
+{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.6);
+}
+
+nav a 
+{
+  color: #0ff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+nav a:hover 
+{
+  color: #fff;
+}
+
+.hero 
+{
+  padding: 15vh 2rem;
+  text-align: center;
+}
+.hero h1 
+{
+  font-size: 3rem;
+  text-shadow: 0 0 20px #9cf;
+}
+.hero p 
+{
+  font-size: 1.2rem;
+}
+.btn 
+{
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: #0ff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #0ff;
+  transition: 0.3s;
+}
+.btn:hover 
+{
+  background: #0cf;
+  box-shadow: 0 0 20px #0cf;
+}
+
+section 
+{
+  padding: 5rem 2rem;
+}
+
+#games, #about, #contact 
+{
+  background: rgba(0, 0, 0, 0.5); 
+}
+
+footer 
+{
+  background: #000;
+  color: #555;
+  text-align: center;
+  padding: 1rem;
+}
+
